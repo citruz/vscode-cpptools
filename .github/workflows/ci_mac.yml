@@ -53,3 +53,9 @@ jobs:
         with:
           run: yarn run integrationTests
           working-directory: Extension
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: extension
+          path: ./Extension/
